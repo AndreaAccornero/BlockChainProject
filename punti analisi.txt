@@ -1,0 +1,26 @@
+Analisi Esplorativa dei Dati (EDA):
+
+Inizia esaminando le caratteristiche disponibili nel dataset, in particolare le prime 94 che rappresentano le informazioni locali sulla transazione e le rimanenti 72 che sono caratteristiche aggregate.
+Effettua un'analisi statistica delle caratteristiche per comprendere la distribuzione e le relazioni tra di esse.
+Esplora la distribuzione delle etichette di classe (licito, illecito, sconosciuto) per comprendere la composizione del dataset.
+Creazione di Nuove Caratteristiche:
+
+In base alle proprietà del grafo delle transazioni, calcola nuove caratteristiche per ciascun nodo. Ad esempio, puoi calcolare la centralità dei nodi, i coefficienti di clustering, le feature basate su grafi, ecc.
+Esplora tecniche avanzate di analisi dei grafi per estrarre informazioni significative dalla struttura delle transazioni.
+Preparazione dei Dati:
+
+Suddividi il dataset in set di addestramento e di test.
+Gestisci eventuali valori mancanti o outliers nelle caratteristiche.
+Normalizza o standardizza le caratteristiche se necessario.
+Addestramento dei Modelli di Classificazione:
+
+Utilizza tecniche di classificazione basate su reti neurali grafiche (GNN) per classificare i nodi del grafo.
+Utilizza il set di addestramento per addestrare i modelli, valutandoli poi sul set di test.
+Valutazione delle Prestazioni:
+
+Valuta le prestazioni dei modelli utilizzando metriche appropriate come precision, recall, F1-score, e l'area sotto la curva ROC (ROC-AUC).
+Confronta le prestazioni dei modelli utilizzando solo le caratteristiche originali con quelle ottenute utilizzando le nuove caratteristiche create.
+Analisi dei Risultati:
+
+Analizza i risultati per comprendere l'efficacia delle nuove caratteristiche nel migliorare le prestazioni dei modelli di classificazione.
+Identifica eventuali tendenze o modelli interessanti emersi durante l'analisi.
