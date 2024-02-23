@@ -9,8 +9,9 @@ def load_data(data_path, noAgg=False):
 
     # Read edges, features and classes from csv files
     df_edges = pd.read_csv(osp.join(data_path, "elliptic_txs_edgelist.csv"))
-    df_features = pd.read_csv(osp.join(data_path, "elliptic_txs_features.csv"), header=None)
+    df_features = pd.read_csv(osp.join(data_path, "elliptic_txs_features.csv"))
     df_classes = pd.read_csv(osp.join(data_path, "elliptic_txs_classes.csv"))
+
 
     # Name colums basing on index
     colNames1 = {'0': 'txId', 1: "Time step"}
