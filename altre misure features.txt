@@ -1,0 +1,24 @@
+Misure di Centralità:
+
+Centralità di Grado (Degree Centrality): Il numero di archi incidenti su un nodo.
+Centralità di Prossimità (Closeness Centrality): La vicinanza di un nodo agli altri nodi nel grafo.
+Centralità di Intermediazione (Betweenness Centrality): Il numero di volte che un nodo giace lungo il percorso più breve tra altri nodi.
+Centralità di Autovettori (Eigenvector Centrality): L'importanza di un nodo nel contesto della sua connessione ad altri nodi importanti.
+
+Misure di Clustering:
+
+Coefficienti di Clustering (Clustering Coefficients): La frazione dei vicini di un nodo che sono anche vicini tra loro.
+Coefficienti di Clustering Locale (Local Clustering Coefficients): Il numero di archi che esistono tra i vicini di un nodo diviso per il massimo numero possibile di archi tra quei vicini.
+Transitività: La probabilità che due vicini di un nodo siano anche collegati tra loro.
+
+Feature basate su Grafi:
+
+Graphlets: Sottostrutture di grafi più piccole che possono catturare informazioni locali.
+Diametro del Grafo: La lunghezza massima dei percorsi più corti tra tutte le coppie di nodi.
+Densità del Grafo: Il rapporto tra il numero reale di archi presenti e il numero massimo possibile di archi.
+Numero di Componenti Connesse: Il numero di sottoinsiemi di nodi in cui ogni coppia di nodi è connessa da almeno un percorso.
+
+Altre proprietà del Grafo:
+
+Assortatività: La tendenza dei nodi a collegarsi con altri nodi che hanno caratteristiche simili.
+Coefficienti di Assortatività: Misura il grado di assortatività del grafo rispetto a determinate caratteristiche (ad esempio, gradi dei nodi).
