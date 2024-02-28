@@ -33,7 +33,7 @@ def compute_metrics(model, name, data, df):
   _, y_predicted = model((data.x, data.edge_index))[0].to("cpu").max(dim=1)
   data = data.to("cpu")
 
-  prec_ill,rec_ill,f1_ill,_ = precision_recall_fscore_support(data.y[data.test_mask], y_predicted[data.test_mask], average='binary', pos_label=0)
+  prec_ill,rec_ill,f1_ill,_ = precision_recall_fscore_support(data.y[data.test_mask], y_predicted[data.test_mask], average='binary', pos_label=1)
   f1_micro = f1_score(data.y[data.test_mask], y_predicted[data.test_mask], average='micro')
 
   m = {'model': name, 'Precision': np.round(prec_ill,3), 'Recall': np.round(rec_ill,3), 'F1': np.round(f1_ill,3),

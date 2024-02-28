@@ -57,6 +57,15 @@ models_to_train = {
     #                  args['hidden_units']//2, args['num_classes']], device=args.device).to(args.device)
 }
 
+models_to_train1= {
+    'GCN Convolution (tx)': models.GCNConvolution(args, data_noAgg.num_features, args.hidden_units_noAgg).to(args.device),
+    'GCN Convolution (tx+agg)': models.GCNConvolution(args, data.num_features, args.hidden_units).to(args.device)
+
+    #'Custom GAT': GAT(num_of_layers=3, num_heads_per_layer=[1, 4, 1],
+    #                  num_features_per_layer=[args.num_features, args['hidden_units'],
+    #                  args['hidden_units']//2, args['num_classes']], device=args.device).to(args.device)
+}
+
 compare_illicit = pd.DataFrame(columns=['model','Precision','Recall', 'F1', 'F1 Micro AVG'])
 print("Starting training models")
 print("="*50)
